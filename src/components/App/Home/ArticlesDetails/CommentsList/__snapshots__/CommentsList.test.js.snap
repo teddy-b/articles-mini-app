@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentsList renders correctly 1`] = `
+<div
+  className="comments-list"
+>
+  <h3>
+    Comments
+  </h3>
+  <textarea
+    cols="40"
+    onKeyPress={[Function]}
+    placeholder="Add comment"
+    rows="5"
+  />
+  <div
+    className="comments-list-empty"
+  >
+    <h4>
+      No comments yet
+    </h4>
+    <div>
+      Be the first to comment
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CommentsList renders correctly with comments 1`] = `
+<div
+  className="comments-list"
+>
+  <h3>
+    Comments
+  </h3>
+  <textarea
+    cols="40"
+    onKeyPress={[Function]}
+    placeholder="Add comment"
+    rows="5"
+  />
+  <Comment
+    articleId={0}
+    author="grabcocque"
+    createdAt={1530698004815}
+    id={0}
+    onAddReply={[Function]}
+    onLoadReplies={[Function]}
+    parentCommentId={null}
+    replies={undefined}
+    repliesCount={0}
+    text="I have to admit, I rather admire their putting a brave face on things, with their mildly-too-insistent claim that the LHC is vital for finding new physics despite the increasing likelihood it's not going to find any. In that sense the LHC is a political failure, because it has failed at its primary political job, which is to make the argument for an even bigger collider."
+  />
+  <Comment
+    articleId={0}
+    author="teddythetwig"
+    createdAt={1530698004815}
+    id={1}
+    onAddReply={[Function]}
+    onLoadReplies={[Function]}
+    parentCommentId={null}
+    replies={undefined}
+    repliesCount={2}
+    text="I assume these particles were already predicted as part of the Standard Model?"
+  />
+  <Comment
+    articleId={0}
+    author="guitarbill"
+    createdAt={1530698004815}
+    id={6}
+    onAddReply={[Function]}
+    onLoadReplies={[Function]}
+    parentCommentId={null}
+    replies={undefined}
+    repliesCount={0}
+    text="AFAIK, the experimentally determined rest masses of these excited states/particles (same thing, different was of looking at it) agree with the calculated ones well. So yes, they were predicted. No surprises sadly; of course it's still a huge achievement!"
+  />
+</div>
+`;

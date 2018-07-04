@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="articles-list"
+  >
+    <h2>
+      Articles list
+    </h2>
+    <div
+      className="pagination"
+    />
+  </div>
+  <div
+    className="articles-details-empty"
+  >
+    <h2>
+      Nothing to show
+    </h2>
+    <div>
+      Select article from the list to see details
+    </div>
+  </div>
+</div>
+`;

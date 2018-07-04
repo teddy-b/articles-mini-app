@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div
+  className="home"
+>
+  <ErrorBoundary />
+  <ErrorBoundary>
+    <ArticlesList
+      articles={Array []}
+      articlesCount={0}
+      onLoadComments={[Function]}
+      onNextPage={[Function]}
+      onPrevPage={[Function]}
+      onSelectArticle={[Function]}
+      page={0}
+      selectedArticleId={null}
+    />
+  </ErrorBoundary>
+  <ErrorBoundary>
+    <ArticlesDetails
+      comments={Array []}
+      onAddComment={[Function]}
+      onAddReply={[Function]}
+      onLoadReplies={[Function]}
+      selectedArticle={undefined}
+    />
+  </ErrorBoundary>
+</div>
+`;
+
+exports[`Home renders correctly while fetching 1`] = `
+<div
+  className="home"
+>
+  <ErrorBoundary>
+    <Loading />
+  </ErrorBoundary>
+  <ErrorBoundary>
+    <ArticlesList
+      articles={Array []}
+      articlesCount={0}
+      onLoadComments={[Function]}
+      onNextPage={[Function]}
+      onPrevPage={[Function]}
+      onSelectArticle={[Function]}
+      page={0}
+      selectedArticleId={null}
+    />
+  </ErrorBoundary>
+  <ErrorBoundary>
+    <ArticlesDetails
+      comments={Array []}
+      onAddComment={[Function]}
+      onAddReply={[Function]}
+      onLoadReplies={[Function]}
+      selectedArticle={undefined}
+    />
+  </ErrorBoundary>
+</div>
+`;
+
+exports[`Home renders correctly with params 1`] = `
+<div
+  className="home"
+>
+  <ErrorBoundary />
+  <ErrorBoundary>
+    <ArticlesList
+      articles={Array []}
+      articlesCount={0}
+      onLoadComments={[Function]}
+      onNextPage={[Function]}
+      onPrevPage={[Function]}
+      onSelectArticle={[Function]}
+      page={0}
+      selectedArticleId={null}
+    />
+  </ErrorBoundary>
+  <ErrorBoundary>
+    <ArticlesDetails
+      comments={Array []}
+      onAddComment={[Function]}
+      onAddReply={[Function]}
+      onLoadReplies={[Function]}
+      selectedArticle={undefined}
+    />
+  </ErrorBoundary>
+</div>
+`;

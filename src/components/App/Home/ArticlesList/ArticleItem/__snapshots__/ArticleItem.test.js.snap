@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleItem renders correctly 1`] = `
+<a
+  className="styled-link"
+  href="/article/0"
+  onClick={[Function]}
+>
+  <div
+    className="article-item "
+  >
+    <div
+      className="article-item-img"
+    >
+      <img
+        alt="CERN experiment discovers five new particles"
+        src="http://www.stfc.ac.uk/stfc/cache/file/4821074D-0D31-4964-9318CA0AE81E0639.jpg"
+      />
+    </div>
+    <div
+      className="article-item-content"
+    >
+      <div
+        className="article-item-title"
+      >
+        CERN experiment discovers five new particles
+      </div>
+      <div
+        className="article-item-text"
+      >
+        A new group of particles which have long been hiding in plain sight have finally been discovered thanks to the incredibly sensitive LHCb experiment at CERN. LHCb, otherwise known as the Large Hadron Collider beauty experiment, is one of seven experiments collecting data at the Large Hadron Collider at CERN. UK participation in the experiment is funded by STFC.
+      </div>
+      <div
+        className="article-item-comments"
+      >
+        8
+         comments
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`ArticleItem renders correctly while selected 1`] = `
+<a
+  className="styled-link"
+  href="/article/0"
+  onClick={[Function]}
+>
+  <div
+    className="article-item selected"
+  >
+    <div
+      className="article-item-img"
+    >
+      <img
+        alt="CERN experiment discovers five new particles"
+        src="http://www.stfc.ac.uk/stfc/cache/file/4821074D-0D31-4964-9318CA0AE81E0639.jpg"
+      />
+    </div>
+    <div
+      className="article-item-content"
+    >
+      <div
+        className="article-item-title"
+      >
+        CERN experiment discovers five new particles
+      </div>
+      <div
+        className="article-item-text"
+      >
+        A new group of particles which have long been hiding in plain sight have finally been discovered thanks to the incredibly sensitive LHCb experiment at CERN. LHCb, otherwise known as the Large Hadron Collider beauty experiment, is one of seven experiments collecting data at the Large Hadron Collider at CERN. UK participation in the experiment is funded by STFC.
+      </div>
+      <div
+        className="article-item-comments"
+      >
+        8
+         comments
+      </div>
+    </div>
+  </div>
+</a>
+`;
