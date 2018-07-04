@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment renders correctly 1`] = `
+<div
+  className="comment"
+>
+  <div
+    className="comment-heading"
+  >
+    <span
+      className="comment-author"
+    >
+      brutuscat
+    </span>
+    <span
+      className="comment-created-at"
+    >
+      a few seconds ago
+    </span>
+    <span
+      className={0}
+      onClick={[Function]}
+    >
+      0
+       replies
+    </span>
+    <span
+      className="comment-reply-active comment-reply-active-reply"
+      onClick={[Function]}
+    >
+      reply
+    </span>
+  </div>
+  <p>
+    Professor Tim Gershon, Professor of Physics at University of Warwick and UK spokesperson for the LHCb experiment: 
+  </p>
+  RepliesList
+</div>
+`;

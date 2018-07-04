@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+
+# production
+/dist
+
+# code coverage
+/coverage
+
+#api
+/src/fakeApi
+
+# create-react-app files
+/src/registerServiceWorker.js
+/config
+/scripts

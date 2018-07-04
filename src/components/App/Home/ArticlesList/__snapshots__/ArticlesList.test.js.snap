@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticlesList renders correctly 1`] = `
+<div
+  className="articles-list"
+>
+  <h2>
+    Articles list
+  </h2>
+  <div
+    className="pagination"
+  />
+</div>
+`;
+
+exports[`ArticlesList renders correctly last page 1`] = `
+<div
+  className="articles-list"
+>
+  <h2>
+    Articles list
+  </h2>
+  <div
+    className="pagination"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Load Prev
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ArticlesList renders correctly load next and load prev button 1`] = `
+<div
+  className="articles-list"
+>
+  <h2>
+    Articles list
+  </h2>
+  <div
+    className="pagination"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Load Prev
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Load Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ArticlesList renders correctly load next button 1`] = `
+<div
+  className="articles-list"
+>
+  <h2>
+    Articles list
+  </h2>
+  ArticleItem
+  ArticleItem
+  ArticleItem
+  <div
+    className="pagination"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Load Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ArticlesList renders correctly with articles 1`] = `
+<div
+  className="articles-list"
+>
+  <h2>
+    Articles list
+  </h2>
+  ArticleItem
+  ArticleItem
+  ArticleItem
+  <div
+    className="pagination"
+  />
+</div>
+`;
