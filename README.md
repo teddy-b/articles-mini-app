@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find some information on how to perform common tasks in the [User Guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+## Demo
+
+Latest build is available at [Articles Mini App Demopage](https://teddy-b.github.io/articles-mini-app/).
+
 ## Setup
 
 * Run `npm install` or `yarn install` to install dependencies. You need to have **node.js** installed globally.
