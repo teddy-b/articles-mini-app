@@ -4,6 +4,7 @@ import {
   articles,
   page,
   comments,
+  articlesComments,
   fetching,
   selectedArticleId,
   errors
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   articles,
   page,
   comments,
+  articlesComments,
   fetching,
   selectedArticleId,
   errors

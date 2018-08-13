@@ -44,6 +44,8 @@ class Home extends Component {
     } = this.props;
     const selectedArticle = articles.filter(a => a.id === selectedArticleId)[0];
 
+    // const { match: { params: { id } } } = this.props;
+
     return (
       <div className="home">
         <ErrorBoundary>

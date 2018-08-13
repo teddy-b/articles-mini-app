@@ -1,3 +1,5 @@
+import { normalize } from 'normalizr';
+
 import api from '../fakeApi';
 import {
   loadArticlesStart,
@@ -16,12 +18,24 @@ import {
   addReplySuccess,
   addReplyFail
 } from './articlesActions';
+import {
+  // reply,
+  comment,
+  article
+} from './schema';
 
 export const loadArticles = () => (dispatch) => {
   dispatch(loadArticlesStart());
 
   return api.loadArticles()
-    .then(result => dispatch(loadArticlesSuccess(result)))
+    .then((result) => {
+      const data = normalize(result.data, [article]);
+      dispatch(loadArticlesSuccess({
+        byId: data.entities.articles,
+        allIds: data.result
+      }));
+      return result;
+    })
     .catch(error => dispatch(loadArticlesFail(error)));
 };
 
@@ -30,7 +44,15 @@ export const loadComments = articleId => (dispatch) => {
 
   return api.loadComments({
     articleId
-  }).then(result => dispatch(loadCommentsSuccess(result.data)))
+  }).then((result) => {
+    const data = normalize(result.data, [comment]);
+    dispatch(loadCommentsSuccess({
+      articleId,
+      byId: data.entities.comments,
+      allIds: data.result
+    }));
+    return result;
+  })
     .catch(error => dispatch(loadCommentsFail(error)));
 };
 
@@ -39,7 +61,10 @@ export const loadReplies = parentCommentId => (dispatch) => {
 
   return api.loadComments({
     parentCommentId
-  }).then(result => dispatch(loadRepliesSuccess(result.data)))
+  }).then((result) => {
+    dispatch(loadRepliesSuccess(result.data));
+    return result;
+  })
     .catch(error => dispatch(loadRepliesFail(error)));
 };
 

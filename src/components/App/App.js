@@ -7,7 +7,7 @@ import ConnectedHome from '../../containers/ConnectedHome';
 
 const App = () => (
   <ErrorBoundary>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={ConnectedHome} />
         <Route path="/article/:id" component={ConnectedHome} />

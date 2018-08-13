@@ -13,11 +13,16 @@ import {
 } from '../../actions';
 import Home from '../../components/App/Home';
 
+import {
+  articlesSelector,
+  commentsSelector
+} from '../../reducers/selectors';
+
 const mapStateToProps = state => ({
-  articles: state.articles.data,
+  articles: articlesSelector(state),
   page: state.page,
   articlesCount: state.articles.totalCount,
-  comments: state.comments,
+  comments: commentsSelector(state),
   fetching: state.fetching,
   selectedArticleId: state.selectedArticleId
 });

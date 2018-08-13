@@ -1,10 +1,17 @@
 const initialState = {
   articles: {
-    data: [],
-    totalCount: 0
+    byId: {
+    },
+    allIds: []
   },
   page: 0,
-  comments: [],
+  comments: {
+    byId: {
+    },
+    allIds: []
+  },
+  articlesComments: {
+  },
   fetching: false,
   selectedArticleId: null,
   errors: []

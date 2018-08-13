@@ -51,10 +51,33 @@ export const comments = (state = initialState.comments, action) => {
 
   switch (action.type) {
     case LOAD_COMMENTS_SUCCESS:
-      return action.payload;
+      return {
+        byId: {
+          ...state.byId,
+          ...action.payload.byId
+        },
+        allIds: [
+          ...state.allIds,
+          ...action.payload.allIds
+        ]
+      };
     case LOAD_REPLIES_SUCCESS:
       state.forEach(loadReplies);
       return [...state];
+    default:
+      return state;
+  }
+};
+
+export const articlesComments = (state = initialState.articlesComments, action) => {
+  switch (action.type) {
+    case LOAD_ARTICLES_SUCCESS:
+      return state;
+    case LOAD_COMMENTS_SUCCESS:
+      return {
+        ...state,
+        [action.payload.articleId]: action.payload.allIds
+      };
     default:
       return state;
   }
